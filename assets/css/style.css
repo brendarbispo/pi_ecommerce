@@ -1,0 +1,32 @@
+/* PALETA DE CORES */
+
+/* FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;800&family=Roboto:wght@300;500&display=swap');
+
+nav a{
+ 
+    font-family: 'Roboto', sans-serif ;
+    font-size: 22px;
+    font-weight: 500;
+
+}
+h2 h3{
+    font-family: 'Poppins', sans-serif;
+}
+/* ATENÇAO AO CRIAR ALTERACOES NESTA AREA!! APENAS PARA ALTERACAO QUE >>>>NAO SEJA POSSIVEL<<<<PELO BOOTSTRAP*/
+
+/* DESIGNS */
+h2{
+    font-size: 36px;
+    font-weight: 800;
+}
+h3{
+    font-size: 18px;
+    font-weight: 200;
+}
+
+li{
+    font-size: 12px;
+}
+
