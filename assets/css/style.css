@@ -30,3 +30,10 @@ li{
     font-size: 12px;
 }
 
+.card{
+    display: inline-flex;
+    margin: 10px;
+
+   
+}
+
