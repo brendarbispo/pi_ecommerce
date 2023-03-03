@@ -12,7 +12,7 @@ nav a{
 
 }
 h2 h3{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
 }
 /* ATENÇAO AO CRIAR ALTERACOES NESTA AREA!! APENAS PARA ALTERACAO QUE >>>>NAO SEJA POSSIVEL<<<<PELO BOOTSTRAP*/
 
@@ -33,7 +33,22 @@ li{
 .card{
     display: inline-flex;
     margin: 10px;
-
-   
 }
 
+
+.mx-10{
+    margin-right: 10rem!important;
+    margin-left: 10rem!important;
+}
+.banner{
+    background-color: black;
+    color: white ;
+}
+
+.banner h3 {
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    margin: 0 !important;
+
+}
