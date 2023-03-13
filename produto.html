@@ -15,189 +15,259 @@
 <body>
     <!-- BARRA DE NAVEGAÇAO -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
-        <div class="container-fluid">
-            <!--CONTAINER LOGO-->
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/logo_delta.jpg" alt="logo_delta" width="48" height="48">
-            </a>
-            <!--INICIO DA BARRA DE BOTOES/CATEGORIAS-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <div class="mx-auto order-0">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item ms-1 me-1">
-                            <a class="nav-link active" aria-current="page" href="#"> INICIO </a>
-                        </li>
-                        <li class="nav-item ms-1 me-1">
-                            <a class="nav-link" href="#"> ROUPAS </a>
-                        </li>
-                        <li class="nav-item ms-1 me-1">
-                            <a class="nav-link" href="#">SAPATOS</a>
-                        </li>
-                        <li class="nav-item ms-1 me-1">
-                            <a class="nav-link" href="#">NOVIDADES</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--FIM DA BARRA DE BOTOES/CATEGORIAS-->
-                <!--INICIO DO BLOCO DE PESQUISA/CARRINHO/ENTRAR-->
-                <div class="d-flex">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item ms-1 me-1">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Pesquisar">
-                                <button class="btn btn-outline-secondary" type="button">
-                                    <i class="fas fa-search"></i></button>
-                            </div>
-                        </li>
-                        <li class="nav-item ms-1 me-1">
-                            <a class="nav-link"><i class="fas fa-bag-shopping"></i></a>
-                        </li>
-                        <li class="nav-item ms-1 me-1">
-                            <a class="nav-link" href="#">ENTRAR</a>
-                        </li>
+        <div class="container">
 
-                    </ul>
-                </div>
-                <!--FIM DO BLOCO DE PESQUISA/CARRINHO/ENTRAR-->
+            <!--CONTAINER LOGO-->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo_delta.jpg" alt="logo_delta" width="48" height="48" href="index.html">
+            </a>
+            <div class="input-group mx-10">
+                <input type="text" class="form-control" placeholder="Buscar produto...">
+                <button class="btn btn-outline-secondary" type="button">
+                    <i class="fas fa-search"></i></button>
             </div>
 
+            <!--FIM DA BARRA DE BOTOES/CATEGORIAS-->
+            <!--INICIO DO BLOCO DE PESQUISA/CARRINHO/ENTRAR-->
+            <div class="d-flex">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item ms-1 me-1">
+
+                    </li>
+                    <li class="nav-item ms-1 me-1">
+                        <a class="nav-link" href="carrinho.html"><i class="fas fa-bag-shopping"></i></a>
+                    </li>
+                    <li class="nav-item ms-1 me-1">
+
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <!--FIM DO BLOCO DE PESQUISA/CARRINHO/ENTRAR-->
+        </div>
         </div>
     </nav>
-    <div class="">
-        <div class="btn-group-vertical">
-            <div class="btn-group">
-            <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Cores</button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#"></a></li>
-                <li><a class="dropdown-item" href="#"></a></li>
-            </ul>
-            </div>
-            <div class="btn-group">
-                <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Tamanho</button>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#"></a></li>
-                <li><a class="dropdown-item" href="#"></a></li>
-                </ul>
-            </div>
-            <div class="btn-group">
-                <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Marca</button>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#"></a></li>
-                <li><a class="dropdown-item" href="#"></a></li>
-                </ul>
-            </div>
-            <div class="btn-group">
-                <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Esporte</button>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#"></a></li>
-                <li><a class="dropdown-item" href="#"></a></li>
-                </ul>
-            </div>
-            <div class="btn-group">
-                <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Categoria</button>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#"></a></li>
-                <li><a class="dropdown-item" href="#"></a></li>
-                </ul>
-            </div>
-            <div class="btn-group">
-                <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Gênero</button>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#"></a></li>
-                <li><a class="dropdown-item" href="#"></a></li>
-                </ul>
-            </div>
-            <div class="btn-group">
-                <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">Preço</button>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#"></a></li>
-                <li><a class="dropdown-item" href="#"></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--CAJAS DE PRODUCTOS-->
-    <div class="text-center justify-content-center" >
 
-            <div class="card col-md-3" >
-                <img src="./assets/img/producto1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-light">Detalhes</a>
+    <!--FIM DA NAVBAR-->
+    <!-- MODAL LOGIN -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login - DELTA STORE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </div>
-            <div class="card col-md-3" >
-                <img src="./assets/img/producto2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-light">Detalhe</a>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="senha" class="col-form-label">Senha:</label>
+                            <input type="password" class="form-control" id="senha">
+                        </div>
+                        <div class="mb-3">
+                            <a href="#">
+                                Esqueceu sua senha?
+                            </a>
+                        </div>
+                    </form>
                 </div>
-            </div>
-            <div class="card col-md-3" >
-                <img src="./assets/img/producto3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-light">Detalhe</a>
-                </div>
-            </div>
-            <div class="card col-md-3" >
-                <img src="./assets/img/producto4.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-light">Detalhe</a>
-                </div>
-            </div>
-            <div class="card col-md-3" >
-                <img src="./assets/img/producto5.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-light">Detalhe</a>
-                </div>
-            </div>
-            <div class="card col-md-3" >
-                <img src="./assets/img/producto6.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-light">Detalhe</a>
-                </div>
-            </div>
-            <div class="card col-md-3" >
-                <img src="./assets/img/producto7.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-light">Detalhe</a>
-                </div>
-            </div>
-            <div class="card col-md-3" >
-                <img src="./assets/img/producto8.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-light">Detalhe</a>
-                </div>
-            </div>
-            <div class="card col-md-3" >
-                <img src="./assets/img/producto9.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-light">Detalhe</a>
+                <div class="modal-footer ">
+                    <div class="mx-auto">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                        <button type="button" class="btn btn-primary">ENTRAR</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- FIM MODAL LOGIN -->
+
+    <div class="container ">
+        <div class="navegacao">
+
+            <div class="row justify-content-between">
+                <div class="col-3">
+                    <h3 class="caminho">Inicio/ Produtos</h3>
+                </div>
+                <div class="col-2 text-end">
+
+                    <div class="dropdown">
+                        <a class="link-icon" href="#" id="ordem" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bars"></i>
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="ordem">
+                            <li><a class="dropdown-item" href="#">Relevantes</a></li>
+                            <li><a class="dropdown-item" href="#">Novidades</a></li>
+                            <li><a class="dropdown-item" href="#">Desconto</a></li>
+                            <li><a class="dropdown-item" href="#">Maior Preço</a></li>
+                            <li><a class="dropdown-item" href="#">Menor Preço</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--CARD DE PRODUTOS-->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div>
         <ul class="pagination text-center justify-content-center">
             <li class="page-item"><a class="page-link text-dark" href="#">Previous</a></li>
@@ -205,7 +275,7 @@
             <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
             <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
             <li class="page-item"><a class="page-link text-dark" href="#">Next</a></li>
-          </ul>
+        </ul>
     </div>
 </body>
 <!--INICIO DO FOOTER-->

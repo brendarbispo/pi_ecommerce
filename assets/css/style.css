@@ -33,6 +33,7 @@ li{
 .card{
     display: inline-flex;
     margin: 10px;
+    padding: 0px;
 }
 
 
@@ -51,4 +52,13 @@ li{
     padding: 5px;
     margin: 0 !important;
 
+}
+.navegacao{
+    margin: 20px 0;
+}
+.caminho{
+    margin: auto 0;
+}
+.link-icon{
+    color: rgba(0,0,0,.55);
 }

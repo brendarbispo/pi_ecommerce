@@ -15,60 +15,79 @@
 <body>
     <!-- BARRA DE NAVEGAÇAO -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
-        <div class="container-fluid">
-            <!--CONTAINER LOGO-->
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/logo_delta.jpg" alt="logo_delta" width="48" height="48">
-            </a>
-            <!--INICIO DA BARRA DE BOTOES/CATEGORIAS-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <div class="mx-auto order-0">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item ms-1 me-1">
-                            <a class="nav-link active" aria-current="page" href="#"> INICIO </a>
-                        </li>
-                        <li class="nav-item ms-1 me-1">
-                            <a class="nav-link" href="#"> ROUPAS </a>
-                        </li>
-                        <li class="nav-item ms-1 me-1">
-                            <a class="nav-link" href="#">SAPATOS</a>
-                        </li>
-                        <li class="nav-item ms-1 me-1">
-                            <a class="nav-link" href="#">NOVIDADES</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--FIM DA BARRA DE BOTOES/CATEGORIAS-->
-                <!--INICIO DO BLOCO DE PESQUISA/CARRINHO/ENTRAR-->
-                <div class="d-flex">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item ms-1 me-1">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Pesquisar">
-                                <button class="btn btn-outline-secondary" type="button">
-                                    <i class="fas fa-search"></i></button>
-                            </div>
-                        </li>
-                        <li class="nav-item ms-1 me-1">
-                            <a class="nav-link"><i class="fas fa-bag-shopping"></i></a>
-                        </li>
-                        <li class="nav-item ms-1 me-1">
-                            <a class="nav-link" href="#">ENTRAR</a>
-                        </li>
+      <div class="container">
 
-                    </ul>
-                </div>
-                <!--FIM DO BLOCO DE PESQUISA/CARRINHO/ENTRAR-->
-            </div>
+          <!--CONTAINER LOGO-->
+          <a class="navbar-brand" href="index.html">
+              <img src="assets/img/logo_delta.jpg" alt="logo_delta" width="48" height="48" href="index.html">
+          </a>
+          <div class="input-group mx-10">
+              <input type="text" class="form-control" placeholder="Buscar produto...">
+              <button class="btn btn-outline-secondary" type="button">
+                  <i class="fas fa-search"></i></button>
+          </div>
 
-        </div>
-    </nav>
+          <!--FIM DA BARRA DE BOTOES/CATEGORIAS-->
+          <!--INICIO DO BLOCO DE PESQUISA/CARRINHO/ENTRAR-->
+          <div class="d-flex">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item ms-1 me-1">
 
+                  </li>
+                  <li class="nav-item ms-1 me-1">
+                      <a class="nav-link" href="carrinho.html"><i class="fas fa-bag-shopping"></i></a>
+                  </li>
+                  <li class="nav-item ms-1 me-1">
+
+                      <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                          <i class="fas fa-user"></i>
+                      </a>
+                  </li>
+
+              </ul>
+          </div>
+          <!--FIM DO BLOCO DE PESQUISA/CARRINHO/ENTRAR-->
+      </div>
+      </div>
+  </nav>
+
+  <!--FIM DA NAVBAR-->
+  <!-- MODAL LOGIN -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="loginModalLabel">Login - DELTA STORE</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="mb-3">
+                          <label for="email" class="col-form-label">Email:</label>
+                          <input type="email" class="form-control" id="email">
+                      </div>
+                      <div class="mb-3">
+                          <label for="senha" class="col-form-label">Senha:</label>
+                          <input type="password" class="form-control" id="senha">
+                      </div>
+                      <div class="mb-3">
+                          <a href="#">
+                              Esqueceu sua senha?
+                          </a>
+                      </div>
+                  </form>
+              </div>
+              <div class="modal-footer ">
+                  <div class="mx-auto">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                      <button type="button" class="btn btn-primary">ENTRAR</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- FIM MODAL LOGIN -->
     <!--FIM DA NAVBAR-->
 
     <!-- CONTAINER PRINCIPAL-->
