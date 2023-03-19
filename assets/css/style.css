@@ -62,3 +62,8 @@ li{
 .link-icon{
     color: rgba(0,0,0,.55);
 }
+
+#imgsize{
+    width: 500px;
+    height: 500px;
+}

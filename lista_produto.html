@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css" />
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGAÇAO -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
+        <div class="container">
+
+            <!--CONTAINER LOGO-->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo_delta.jpg" alt="logo_delta" width="48" height="48" href="index.html">
+            </a>
+            <div class="input-group mx-10">
+                <input type="text" class="form-control" placeholder="Buscar produto...">
+                <button class="btn btn-outline-secondary" type="button">
+                    <i class="fas fa-search"></i></button>
+            </div>
+
+            <!--FIM DA BARRA DE BOTOES/CATEGORIAS-->
+            <!--INICIO DO BLOCO DE PESQUISA/CARRINHO/ENTRAR-->
+            <div class="d-flex">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item ms-1 me-1">
+
+                    </li>
+                    <li class="nav-item ms-1 me-1">
+                        <a class="nav-link" href="carrinho.html"><i class="fas fa-bag-shopping"></i></a>
+                    </li>
+                    <li class="nav-item ms-1 me-1">
+
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <!--FIM DO BLOCO DE PESQUISA/CARRINHO/ENTRAR-->
+        </div>
+        </div>
+    </nav>
+
+    <!--FIM DA NAVBAR-->
+    <!-- MODAL LOGIN -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login - DELTA STORE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="senha" class="col-form-label">Senha:</label>
+                            <input type="password" class="form-control" id="senha">
+                        </div>
+                        <div class="mb-3">
+                            <a href="#">
+                                Esqueceu sua senha?
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer ">
+                    <div class="mx-auto">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                        <button type="button" class="btn btn-primary">ENTRAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIM MODAL LOGIN -->
+
+    <div class="container ">
+        <div class="navegacao">
+
+            <div class="row justify-content-between">
+                <div class="col-3">
+                    <h3 class="caminho">Inicio/ Produtos</h3>
+                </div>
+                <div class="col-2 text-end">
+
+                    <div class="dropdown">
+                        <a class="link-icon" href="#" id="ordem" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bars"></i>
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="ordem">
+                            <li><a class="dropdown-item" href="#">Relevantes</a></li>
+                            <li><a class="dropdown-item" href="#">Novidades</a></li>
+                            <li><a class="dropdown-item" href="#">Desconto</a></li>
+                            <li><a class="dropdown-item" href="#">Maior Preço</a></li>
+                            <li><a class="dropdown-item" href="#">Menor Preço</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--CARD DE PRODUTOS-->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-3">
+                <div class="card">
+                    <img src="./assets/img/producto4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-light">Detalhe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <ul class="pagination text-center justify-content-center">
+            <li class="page-item"><a class="page-link text-dark" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
+            <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+            <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+            <li class="page-item"><a class="page-link text-dark" href="#">Next</a></li>
+        </ul>
+    </div>
+</body>
+<!--INICIO DO FOOTER-->
+<div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">INICIO</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">ROUPAS</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">SAPATOS</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">TODOS OS PRODUTOS</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">MEUS DADOS</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2023 DELTA STORES, B.J.L.R. - TSI</p>
+    </footer>
+</div>
+<!--FIM DO FOOTER-->
+
+<!--LINKS DE DESING-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>
