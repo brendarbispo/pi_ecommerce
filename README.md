@@ -5,5 +5,3 @@ Projeto de ecommerce - Delta Store
 Parcicipantes:
   - Brenda
   - João
-  - Luzanny
-  - Rodrigo
